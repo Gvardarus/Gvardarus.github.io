@@ -1,0 +1,20 @@
+{{/* layouts/partials/language_switcher.html  */}}
+
+{{ $currentLang := .Language.Lang }}
+{{ $translations := .AllTranslations }}
+
+{{/* */}}
+{{ if gt (len $translations) 1 }}
+<div class="lang-switcher ms-3 d-flex align-items-center">
+    <ul class="navbar-nav flex-row">
+        {{ range $translations }}
+        <li class="nav-item">
+            <a class="nav-link px-2.5 fw-bold {{ if eq .Lang $currentLang }}text-primary{{ else }}text-secondary{{ end }}" 
+               href="{{ .Permalink }}">
+                {{ .Lang | upper }} {{/* (EN, UA) */}}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
