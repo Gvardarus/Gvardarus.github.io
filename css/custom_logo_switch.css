@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* 1. Настройки по умолчанию (СВЕТЛАЯ тема) */
+.profile-avatar-container {
+  /* Скрываем исходный тег <img> внутри контейнера */
+  /* Используется, чтобы избежать двойного изображения */
+  background-image: url("/logo-light.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-avatar-container img {
+  /* Делаем оригинальное изображение аватара невидимым */
+  opacity: 0;
+  visibility: hidden; }
+
+/* 2. Настройки для ТЕМНОЙ темы */
+/* Проверяем, если пользователь или тема включили темный режим */
+@media (prefers-color-scheme: dark) {
+  .profile-avatar-container {
+    /* При темной теме показываем ТЁМНЫЙ логотип */
+    background-image: url("/logo-dark.png"); } }
