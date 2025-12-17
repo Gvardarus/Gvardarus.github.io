@@ -1,44 +1,37 @@
-name: Deploy GitHub Pages
-
+name: Deploy Hugo Site
 on:
   push:
     branches:
-      - main
+      - main  # Проверь, что твоя основная ветка называется main (не master)
+  workflow_dispatch: # Чтобы можно было запустить вручную
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          submodules: true
+          fetch-depth: 0
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          path: './build'
+          hugo-version: 'latest'
+          extended: true # На всякий случай, если тема требует SASS
 
-  deploy-to-pages:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy GitHub Pages
-        uses: actions/deploy-pages@v2
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages # Публикуем результат в эту ветку
