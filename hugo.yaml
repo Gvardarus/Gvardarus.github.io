@@ -80,7 +80,7 @@ languages:
         enable: true
         title: "Мої проєкти"
         items:
-          - title: Автоматизований збір даних клієнтів
+          - title: Автоматизований збір даних клієнтів 
             content: Автоматизований збір повідомлень від клієнтів та сортування ключових даних у структуровану таблицю
              (вхідні Gmail) --> (таблиця у Notion)
             image: /images/projects/proj1.jpg
@@ -92,6 +92,23 @@ languages:
               - "Збір даних"
               - "Таблиця"
               - "Для продаж"
+            links:
+            #  - icon: fa fa-envelope
+            #    url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+              - icon: fab fa-github
+                url: https://github.com/Gvardarus
+
+          - title: Бот-сповіщувач у Телеграм
+            content: Автоматизований збір даних клієнтів та повідомлення від бота-сповіщувача у разі нового замовлення
+            image: /images/projects/proj2.jpg
+            featured:
+              name: Переглянути
+              link: /uk/project/FormsTelegram/
+            badges:
+              - "CRM"
+              - "Збір даних"
+              - "Таблиця"
+              - "Воронка продаж"
             links:
             #  - icon: fa fa-envelope
             #    url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
@@ -435,6 +452,23 @@ params:
         featured:
           name: View
           link: /en/project/GMNotion/
+        badges:
+          - "CRM"
+          - "Data collect"
+          - "Tables"
+          - "For sales"
+        links:
+        #  - icon: fa fa-envelope
+        #    url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/Gvardarus
+
+      - title: Telegram bot-notifier
+        content: Automated collection of customer data and notification from a bot in case of a new order
+        image: /images/projects/proj2.jpg
+        featured:
+          name: View
+          link: /en/project/FormsTelegram/
         badges:
           - "CRM"
           - "Data collect"

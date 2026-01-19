@@ -21,10 +21,16 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/project/FormsTelegram/</loc>
+    <lastmod>2025-11-29T18:12:00+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/uk/</loc>
     <lastmod>2025-11-29T18:12:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/uk/project/gmnotion/</loc>
+    <lastmod>2025-11-29T18:12:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/uk/project/FormsTelegram/</loc>
     <lastmod>2025-11-29T18:12:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>

@@ -16,10 +16,24 @@
       <description>Здесь краткое описание, которое появится на главной странице.</description>
     </item>
     <item>
+      <title>Telegram bot-notifier</title>
+      <link>http://localhost:1313/en/project/FormsTelegram/</link>
+      <pubDate>Sat, 29 Nov 2025 18:12:00 +0300</pubDate>
+      <guid>http://localhost:1313/en/project/FormsTelegram/</guid>
+      <description>Здесь краткое описание, которое появится на главной странице.</description>
+    </item>
+    <item>
       <title>Автоматизований збір даних клієнтів</title>
       <link>http://localhost:1313/uk/project/gmnotion/</link>
       <pubDate>Sat, 29 Nov 2025 18:12:00 +0300</pubDate>
       <guid>http://localhost:1313/uk/project/gmnotion/</guid>
+      <description>Здесь краткое описание, которое появится на главной странице.</description>
+    </item>
+    <item>
+      <title>Бот-сповіщувач у Телеграм</title>
+      <link>http://localhost:1313/uk/project/FormsTelegram/</link>
+      <pubDate>Sat, 29 Nov 2025 18:12:00 +0300</pubDate>
+      <guid>http://localhost:1313/uk/project/FormsTelegram/</guid>
       <description>Здесь краткое описание, которое появится на главной странице.</description>
     </item>
   </channel>

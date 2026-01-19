@@ -28,19 +28,19 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/uk/project/gmnotion/">
+<meta property="og:url" content="http://localhost:1313/en/project/FormsTelegram/">
   <meta property="og:site_name" content="Portfolio">
-  <meta property="og:title" content="Автоматизований збір даних клієнтів">
+  <meta property="og:title" content="Telegram bot-notifier">
   <meta property="og:description" content="Здесь краткое описание, которое появится на главной странице.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="uk">
+    <meta property="article:section" content="en">
     <meta property="article:published_time" content="2025-11-29T18:12:00+03:00">
     <meta property="article:modified_time" content="2025-11-29T18:12:00+03:00">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Автоматизований збір даних клієнтів">
+  <meta name="twitter:title" content="Telegram bot-notifier">
   <meta name="twitter:description" content="Здесь краткое описание, которое появится на главной странице.">
 
 
@@ -116,7 +116,7 @@
   
 
   <title>
-Автоматизований збір даних клієнтів | Portfolio
+Telegram bot-notifier | Portfolio
 
   </title>
 
@@ -284,7 +284,7 @@
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Автоматизований збір даних клієнтів</h1>
+            <h1 class="text-center mb-4">Telegram bot-notifier</h1>
             
 
 
@@ -306,44 +306,53 @@
           </div>
           
           <article class="page-content  p-2">
-          <h1 id="опис-проєкту">ОПИС ПРОЄКТУ</h1>
+          <h1 id="project-description">PROJECT DESCRIPTION</h1>
 <hr>
-<h2 id="1-головні-проблеми">1. Головні проблеми</h2>
-<p>У даному кейсі розглядається випадок коли користувач приймає на електронну пошту повідомлення від клієнтів. Це може бути онлайн-магазин що приймає заявки на купівлю товару, або це просто пошта на яку приходить велика кількість повідомлень.  Основна проблема полягає у &ldquo;ручному&rdquo; копіюванні даних та перенесення їх у інше середовище для опрацювання що є дуже монотонним, рутинним та часовитратним процесом.</p>
-<h2 id="2-задачі">2. Задачі</h2>
-<p>Створити та налаштувати систему таким чином щоби позбавити користувача рутинної роботи взагалі, автоматизувавши всі дії з перенесенням даних.<br>
-Для реалізації було вибрано платформу Make(Integromat) через наявність гнучких у налаштуванні модулів-шаблонів</p>
-<h2 id="3-поетапне-рішення-скріншоти">3. Поетапне рішення (скріншоти)</h2>
-<ol>
-<li>Створення нового проэкту у Make. Вибрав модуль Gmail (Watch emails) так як цей модуль підходить більш за все у даній ситуації. Він запускає виконання сценарію як тільки на пошту приходить нове повідомлення.</li>
-</ol>
-<p><img src="/uk/project/gmnotion/imgproj/modul.jpg" alt="вибір модуля Gmail"></p>
-<ol start="2">
-<li>Створив нову таблицю у робочому середовищі Notion. Додав колонки для необхідного типу інформації та фільтрацію по типу даних (дуже зручно сортувати список по окремому типу). Також можна налаштувати можливість перегляду та редагування таблиці кількома учасниками команди у реальному часі.</li>
-</ol>
-<p><img src="/uk/project/gmnotion/imgproj/tablenotion.jpg" alt="таблиця у Notion"></p>
-<ol start="3">
-<li>У налаштуваннях модуля Gmail вибрав електронну пошту на яку будуть приходити повідомлення. Папка для перегляду - Inbox (вхідні). Саме звідти повідомлення будуть відправлятися до середовища Notion.</li>
-</ol>
-<p><img src="/uk/project/gmnotion/imgproj/gmailset.jpg" alt="налаштування модуля Гмейл"></p>
-<ol start="4">
-<li>Вибираємо модуль Notion (Create a Database item Legacy) щоби при отриманні нового повідомлення створювати кожен раз новий рядок у базі даних Notion. В налаштуваннях модуля вибираємо через ID пошук потрібну базу даних та вказуємо тегами який саме тип даних з повідомлення ми очікуємо бачити у своїй базі даних. У відповідну колонку вказуємо відповідний тег.</li>
-</ol>
-<p><img src="/uk/project/gmnotion/imgproj/notionset.jpg" alt="налаштування модуля Гмейл">
-Теги даних<br>
-<img src="/uk/project/gmnotion/imgproj/tags.jpg" alt="налаштування модуля Гмейл"></p>
-<h2 id="4-результати">4. Результати</h2>
-<p>Після налаштування модулів можемо перевірити результат системи</p>
-<p>Як тільки у &ldquo;вхідних&rdquo; електронної скриньки з&rsquo;являється нове повідомлення, тригер-модуль Gmail запускає сценарій. Нове повідомлення та ті типи даних які ми вказали у налаштуваннях модуля Notion будуть автоматично заповнювати таблицю</p>
-<p><img src="/uk/project/gmnotion/imgproj/all.gif" alt="результат"></p>
-<p>Підсумок виконаної роботи:</p>
-<p>Було спроєктовано та реалізовано no-code автоматизацію, яка дозволяє автоматично переносити вхідні повідомлення з Gmail до бази даних Notion. Рішення усуває ручне копіювання даних, зменшує ризик помилок та забезпечує зручний доступ до структурованої інформації в одному середовищі.</p>
-<p>Інструменти:</p>
+<h2 id="1-main-problems">1. Main problems</h2>
+<p>Another example of business process automation that is as useful and fast as possible. The main problem was processing a large amount of &ldquo;raw&rdquo; data in the form of responses in Google Forms when the buyer created an application. Other inconveniences:</p>
 <ul>
-<li>Gmail API documentation</li>
-<li>Notion API documentation</li>
+<li>There is no way to sort data by category, you need to copy it manually to an additional environment (Goodle docs)</li>
+<li>You need to constantly check new incoming orders in real time, you need to check whether a given order has been processed.</li>
+<li>It&rsquo;s difficult to do anything else without constantly &ldquo;monitoring&rdquo; the responses.</li>
+</ul>
+<h2 id="2-objectives">2. Objectives</h2>
+<p>The main task was to create an environment where it is convenient to search and process orders using automatic filling in the table. Additionally, it was decided to create a business group in Telegram and create a bot that will notify ALL group members about a new unprocessed order.</p>
+<h2 id="3-step-by-step-solution-screenshots">3. Step-by-step solution (screenshots)</h2>
+<ol>
+<li>Creating a new project in Make. Google Forms trigger module to activate a script when a new response is received.</li>
+</ol>
+<p><img src="/en/project/FormsTelegram/imgproj1/formmodule.jpg" alt="selecting the Forms module"></p>
+<ul>
+<li>example of form design
+<img src="/en/project/FormsTelegram/imgproj1/form.jpg" alt="form example"></li>
+</ul>
+<ol start="2">
+<li>Created a new spreadsheet in Google Docs. Added columns for the required type of information and filtering by data type (it&rsquo;s very convenient to sort the list by a specific type). You can also configure the ability to view and edit the spreadsheet by multiple team members in real time.</li>
+</ol>
+<p><img src="/en/project/FormsTelegram/imgproj1/docsmodule.jpg" alt="selecting the Docs module"></p>
+<ul>
+<li>example of a table for sorting data
+<img src="/en/project/FormsTelegram/imgproj1/tabledocs.jpg" alt="table example"></li>
+</ul>
+<ol start="3">
+<li>Telegram bot module for viewing and replying to messages</li>
+</ol>
+<p><img src="/en/project/FormsTelegram/imgproj1/telegrammodule.jpg" alt="Telegram module"></p>
+<ol start="4">
+<li>A Telegram bot has been set up in the business group for employees.</li>
+</ol>
+<p><img src="/en/project/FormsTelegram/imgproj1/telegrambot.jpg" alt="bot in group"></p>
+<p>There was a problem during the module setup. It was not possible to get the ID address of the business chat, which is why the bot did not understand where to send the message. This is one of the nuances of working with API protocols and privacy settings in services. It was not possible to find by username or by channel address, because it is a private group and it has only a link, which is not suitable for the Telegram module in Make. It was decided to find out the chat ID through an online link to the API that tracks the bot&rsquo;s actions and data processing. Using the bot token, it was possible to find out the chat ID through one message to the group.</p>
+<p><a href="https://api.telegram.org/bot">https://api.telegram.org/bot</a>&lt;bot_token&gt;/getUpdates</p>
+<h2 id="4-results">4. Results</h2>
+<p>As soon as a customer creates a new order in Google Forms, the system automatically transfers the order data to a sorted database in Google Docs. Telegram also receives a real-time notification about a new order from the customer.</p>
+<p>Summary of work performed:</p>
+<p>Designed and implemented no-code automation that allows you to automatically transfer incoming orders from Google Forms to the Google Docs database. Additionally, a Telegram bot was created and configured to send notifications when a new order arrives.</p>
+<p>Tools used:</p>
+<ul>
+<li>Telegram API documentation</li>
+<li>Google API documentation</li>
 <li>Make(Integromat)</li>
-<li>Notion workspace</li>
 </ul>
 
           </article>
@@ -357,10 +366,10 @@
               <div class="toc-content">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-головні-проблеми">1. Головні проблеми</a></li>
-    <li><a href="#2-задачі">2. Задачі</a></li>
-    <li><a href="#3-поетапне-рішення-скріншоти">3. Поетапне рішення (скріншоти)</a></li>
-    <li><a href="#4-результати">4. Результати</a></li>
+    <li><a href="#1-main-problems">1. Main problems</a></li>
+    <li><a href="#2-objectives">2. Objectives</a></li>
+    <li><a href="#3-step-by-step-solution-screenshots">3. Step-by-step solution (screenshots)</a></li>
+    <li><a href="#4-results">4. Results</a></li>
   </ul>
 </nav>
               </div>
