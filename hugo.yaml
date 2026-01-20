@@ -25,7 +25,7 @@ languages:
         title: "Ярослав"
         subtitle: "Ставлю Вашу роботу на автопілот"
         content: "Іноді вільна година дорожча за мільйон"
-        image: /images/me.jpg
+        image: /images/me3.jpg
         bottomImage:
           enable: true
       # roundImage: true # Make hero image circular | default false
@@ -49,6 +49,7 @@ languages:
       about:
         enable: true
         title: "Про мене"
+        image: "/images/me2.jpg"
         content: |-
           Я розробник систем без коду, який автоматизує етапи різних бізнес-процесів або ваших власних сценаріїв.
           Створюю та впроваджую агентів штучного інтелекту в робочі процеси для автоматизації.
@@ -274,7 +275,7 @@ params:
     title: "Yaroslav"
     subtitle: "I put your work on autopilot"
     content: "Sometimes a couple of free hours can be more valuable than the cost of a project"
-    image: /images/me.jpg
+    image: /images/me3.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -298,7 +299,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.jpg"
+    image: "/images/me2.jpg"
     content: |-
       I am a no-code system developer that provides automatising workflow of different business processes or your own scenarios.
       Сreation and implementation of AI agents in workflow for increasing productivity.
